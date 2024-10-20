@@ -47,7 +47,7 @@ public class LoginController {
 		} 
 		else if(admin != null) {
 			
-			return "index";
+			return "admindashboard";
 		}
 		else {
 //			model.addAttribute("error", "Invalid email or password");

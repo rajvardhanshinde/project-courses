@@ -54,6 +54,7 @@
 			<list>
 				<value>TwoDimension.Model.Student</value>
 				<value>TwoDimension.Model.Admin</value>
+				<value>TwoDimension.Model.Courses</value>
 			</list>
 		</property>
 	</bean>   

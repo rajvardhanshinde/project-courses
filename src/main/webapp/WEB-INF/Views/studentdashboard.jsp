@@ -225,12 +225,12 @@ a {
     <div class="box-top">
       <img class="box-image" src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
       <div class="title-flex">
-        <h3 class="box-title">Full Stack Java</h3>
+        <h3 class="box-title">Python</h3>
         <p class="user-follow-info">17 chapters</p>
       </div>
       <p class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
     </div>
-    <a href="#" class="button">Follow Kelsie</a>
+<a href="${pageContext.request.contextPath}/course/101" class="button">EXPLORE</a>
   </div>
   <div class="box">
     <div class="box-top">
