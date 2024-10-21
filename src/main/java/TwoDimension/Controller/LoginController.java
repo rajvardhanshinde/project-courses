@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import TwoDimension.Service.AdminService;
 import TwoDimension.Service.StudentService;
@@ -29,20 +30,18 @@ public class LoginController {
 	}
 	
 	@RequestMapping("/studentdashboard")
-	public String studentdashboard(@ModelAttribute("student") Student student, Model model)
+	public String studentdashboard()
 	{
-	
-		model.addAttribute("student", student);
 		return "studentdashboard";
 	}
 	
 
 	@RequestMapping(path = "/loginhandle", method = RequestMethod.POST)
-	public String login(@RequestParam("email") String email, @RequestParam("password") String password, Model model) {
+	public String login(@RequestParam("email") String email, @RequestParam("password") String password,RedirectAttributes ra) {
 		Student student = studentService.login(email, password);
 		Admin admin = this.adminService.loginAdmin(email, password);
 		if (student != null) {
-			model.addAttribute("student", student); // This stores student info temporarily
+			ra.addFlashAttribute("student",student);
 	        return "redirect:/studentdashboard";
 		} 
 		else if(admin != null) {

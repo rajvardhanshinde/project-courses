@@ -76,7 +76,7 @@
             </div>
             <div class="card-body">
                 <h4>Modules in ${course.courseName} Course</h4>
-                <a href="${pageContext.request.contextPath}/getCoursePDF/${course.id}" class="btn btn-primary" target="_blank">
+                <a href="${pageContext.request.contextPath}/getCoursePDF/${course.id}" class="btn btn-primary" >
                     Download/View Course PDF
                 </a>
                 <!-- Placeholder for rendering the PDF -->

@@ -23,22 +23,21 @@ body{
   text-align: center;
   align-items: center;
   justify-content: center;
-  background: #151515;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
   padding: 10px;
 }
 .login-form{
   position: relative;
   width: 370px;
-  background: #1b1b1b;
+  background:rgb(255 255 255 / 20%);
   padding: 40px 35px 60px;
   box-sizing: border-box;
-  border: 1px solid black;
   border-radius: 5px;
-  box-shadow: inset 0 0 1px #272727;
+ 
 }
 .text{
   font-size: 30px;
-  color: #c7c7c7;
+  color: black;
   font-weight: 600;
   letter-spacing: 2px;
 }
@@ -108,10 +107,10 @@ button:hover{
 }
 .link{
   margin-top: 25px;
-  color: #868686;
+  color: black;
 }
 .link a{
-  color: #339933;
+  color: #ff42b3;
   text-decoration: none;
 }
 .link a:hover{
